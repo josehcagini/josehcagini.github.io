@@ -56,9 +56,9 @@ template.innerHTML =  `
 <div class="dropdown">
   <button class="dropbtn">Categorias</button>
   <div id="myDropdown" class="dropdown-content">
-    <a href="#">Equipamentos</a>
-    <a href="#">Armas</a>
-    <a href="#">Roupas</a>
+    <a href="./equipamentos.html">Equipamentos</a>
+    <a href="./armas.html">Armas</a>
+    <a href="./roupas.html">Roupas</a>
   </div>
 </div>
 

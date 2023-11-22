@@ -59,7 +59,7 @@ templateFooterc.innerHTML = `
     font-size: 5rem;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: url('../images/camo.jpg');
+    background-image: url('./images/camo.jpg');
 }
 
 .links-footer h3{
@@ -124,8 +124,8 @@ templateFooterc.innerHTML = `
         <div class="download-options">
             <p>Baixe nosso app</p>
             <div>
-                <img src="../images/app-store.png" alt="store">
-                <img src="../images/play-store.png" alt="store">
+                <img src="./images/app-store.png" alt="store">
+                <img src="./images/play-store.png" alt="store">
             </div>
         </div>
 

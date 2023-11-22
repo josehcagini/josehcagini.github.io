@@ -41,7 +41,7 @@ templateNav.innerHTML = `
     font-size: 5rem;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: url('../images/camo.jpg');
+    background-image: url('./images/camo.jpg');
 }
 
 nav ul{
@@ -128,7 +128,7 @@ nav ul li:hover {
 
 <div class="navbar">
         <div class="header-inner-content ">
-            <h1 class="logo">Legio<span>Store</span></h1>
+            <h1 class="logo"><a href='./index.html'>Legio<span>Store</span></a></h1>
             <nav>
                 <ul>
                     <li>Home</li>
@@ -136,8 +136,8 @@ nav ul li:hover {
                 </ul>
             </nav>
             <div class="nav-icon-conteiner">
-                <img src="../images/cart.png" alt="carr">
-                <img class="menu-button" src="../images/menu.png" alt="carr">
+                <img src="./images/cart.png" alt="carr">
+                <img class="menu-button" src="./images/menu.png" alt="carr">
             </div>
         </div>
     </div>
