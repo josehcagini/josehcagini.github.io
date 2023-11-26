@@ -8,6 +8,11 @@ templateNav.innerHTML = `
     transition: all 0.2s;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .header-inner-content{
     max-width: 1300px;
     margin-left: auto ;
@@ -131,7 +136,7 @@ nav ul li:hover {
             <h1 class="logo"><a href='./index.html'>Legio<span>Store</span></a></h1>
             <nav>
                 <ul>
-                    <li>Home</li>
+                    <li><a href='./index.html'>Home</a></li>
                     <drop-down> </drop-down>
                 </ul>
             </nav>
