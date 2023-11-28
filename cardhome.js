@@ -48,6 +48,9 @@ class CardH extends HTMLElement {
         this.root = this.attachShadow({mode:'open'})
         this.shadowRoot.appendChild(templateCardH.content.cloneNode(true))
 
+        this.root.querySelector('.conteinerCard').addEventListener('click', () => {
+            window.location.href = './produto.html';
+        });
     }
 
     static get observedAttributes(){
