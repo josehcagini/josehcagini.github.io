@@ -1,0 +1,63 @@
+.container-pagamento{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.page-inner-left form fieldset{
+    border-radius: 15px;
+    background-color: #0c0c0c88;
+    padding: 1rem;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastro label {
+    margin-top: 1rem;
+}
+
+.cadastro input {
+    height: 2rem;
+}
+
+.page-inner-right form fieldset {
+    border-radius: 15px;
+    background-color: #0c0c0c88;
+    padding: 1rem;
+}
+
+.forma-pagamento{
+    display: flex;
+    flex-direction: column;
+}
+
+.forma-pagamento label {
+    margin-top: 1rem;
+}
+
+.forma-pagamento input {
+    height: 2rem;
+}
+
+.btnsubmit{
+    background-color: #0c0c0c;
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
+    padding: 0.8rem 3.8rem;
+    border-radius: 9999px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.btnsubmit:hover {
+    transform: scale3d(1.05, 1.05, 1);
+    background-color: #0c0c0ccc;
+}

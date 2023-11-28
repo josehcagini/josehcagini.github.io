@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/pagamento.css">
+  </head>
+  <body>
+    <navbar-c></navbar-c>
+
+    <main>
+
+        <div class="container-pagamento">
+            <div class="page-left">
+                <div class="page-inner-left">
+                    <form>
+                        <fieldset>
+                          <legend>Dados Cadastrais:</legend>
+                          <div>
+                            <input type="radio" id="Brasileiro" name="tipo" value="Brasileiro" />
+                            <label for="Brasileiro">Brasileiro</label>
+                      
+                            <input type="radio" id="Estrangeiro" name="tipo" value="Estrangeiro" />
+                            <label for="Estrangeiro">Estrangeiro</label>
+                          </div>
+
+                          <div class="cadastro">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" placeholder="Digite seu nome completo" />
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" placeholder="Digite seu e-mail" />
+                            <label for="celular">Celular com DDD</label>
+                            <input type="text" id="celular"  />
+                            <label for="cnpj">CPF/CNPJ</label>
+                            <input type="text" id="cnpj" />
+                          </div>
+
+                        </fieldset>
+                      </form>
+                </div>
+            </div>
+            <div class="page-right">
+                <div class="page-inner-right">
+                    <form>
+                        <fieldset>
+                            <legend>Selecionar Pagamento</legend>
+
+                            <div class="forma-pagamento">
+                                <label for="nome">Número do cartão</label>
+                                <input type="text" id="ncartao" placeholder="Digite somente números" />
+                                <label for="nomecartao">Seu Nome impresso no cartão</label>
+                                <input type="text" id="nomecartao" placeholder="Digite seu nome impresso no cartão" />
+                                <label for="validade">Validade</label>
+                                <input type="text" id="celular" />
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" />
+                                <label for="parcelas">Parcelamento</label>
+                                <input type="text" id="cvv" />
+                            </div>
+
+                            <div>
+                                <button class="btnsubmit" id="sutmit"> Comprar Agora</button>
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer-cus></footer-cus>
+   <script src="./footer.js"></script>
+   <script src="./navbar.js"></script>
+   <script src="./dropdown.js"></script>
+  </body>
+</html>
