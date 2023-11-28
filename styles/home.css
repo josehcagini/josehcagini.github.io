@@ -18,6 +18,10 @@
 
 }
 
+.destaque-img{
+    width: 25rem;
+}
+
 .card-destaque button{
     background-color: #0c0c0c;
     border: none;
