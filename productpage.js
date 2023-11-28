@@ -4,7 +4,7 @@ templatePage.innerHTML = `
 
 <style>
     *{
-        color: #fff;
+        color: #c7c7c7;
         font-weight: bold ;
     }
 
