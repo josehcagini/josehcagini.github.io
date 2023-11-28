@@ -17,6 +17,7 @@ templateCardH.innerHTML = `
 }
 img{
     width: 150px;
+    height: 130px;
 }
 .conteinerCard{
     background-color: #c7c7c7;

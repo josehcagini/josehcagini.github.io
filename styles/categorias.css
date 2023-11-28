@@ -18,10 +18,6 @@
 
 }
 
-.destaque-img{
-    width: 25rem;
-}
-
 .card-destaque button{
     background-color: #0c0c0c;
     border: none;
@@ -106,29 +102,4 @@
 .cols>*:hover{
     transform: translateY(-5px);
     
-}
-
-@media(max-width: 800px) {
-
-    .card-destaque{
-        margin-top: 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-    }
-
-    .card-destaque button{
-        margin-bottom: 2rem;
-    }
-
-    .cols-3{
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .cols-4{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
 }

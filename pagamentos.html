@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/pagamento.css">
+  </head>
+  <body>
+    <navbar-c></navbar-c>
+
+    <main>
+
+        <div class="container-pagamento ">
+            <div class="page-left flex-col">
+              <div class="cont-legend">
+                <h2>Dados Cadastrais</h2>
+              </div>
+              <form id="cadastro" class="border-line">
+                <div style="display: flex; justify-content: space-evenly; align-items: center;">
+                  <div  style="display: flex; justify-content: center; align-items: center;">
+                    <input type="radio" id="Brasileiro" name="tipo" value="Brasileiro" />
+                    <label for="Brasileiro">Brasileiro</label>
+                  </div>
+                  <div style="display: flex; justify-content: center; align-items: center;">                    
+                    <input type="radio" id="Estrangeiro" name="tipo" value="Estrangeiro" />
+                    <label for="Estrangeiro">Estrangeiro</label>
+                  </div>
+            
+                </div>
+
+                <div class="cadastro">
+                  <label for="nome">Nome completo</label>
+                  <input type="text" id="nome" placeholder="Digite seu nome completo" />
+                  <label for="email">E-mail</label>
+                  <input type="email" id="email" placeholder="Digite seu e-mail" autocomplete="email" />
+                  <label for="celular">Celular com DDD</label>
+                  <input type="text" id="celular"  />
+                  <label for="cnpj">CPF/CNPJ</label>
+                  <input type="text" id="cnpj" />
+                </div>
+                </form>
+            </div>
+            <div class="page-right flex-col">
+              <div class="cont-legend">
+                <h2>Selecionar Pagamento</h2>
+              </div>
+              <form id="forma-pagamento" class="border-line">
+                <div class="forma-pagamento">
+                    <div class="bandeira">
+                      <img src="images/boleto-bandeira.png" alt="boleto">
+                      <img src="images/visa-bandeira.png" alt="visa">
+                      <img src="images/mastercard-bandeira.png" alt="mastercard">
+                    </div>
+                    <label for="ncartao">Número do cartão</label>
+                    <input type="text" id="ncartao" placeholder="Digite somente números" />
+                    <label for="nomecartao">Seu nome impresso no cartão</label>
+                    <input type="text" id="nomecartao" placeholder="Digite seu nome impresso no cartão" />
+                    <label for="month">Validade</label>
+                    <div class="datapicker">
+                      <select name="month" id="month"></select>
+                      <select name="year" id="year">Year:</select>
+                    </div>
+                    <label for="cvv">CVV</label>
+                    <input type="number" id="cvv" />
+                    <label for="parcelas">Parcelamento</label>
+                    <select name="parcelas" id="parcelas"></select>
+                </div>
+
+                <div style="display: flex; justify-content: center;">
+                    <button class="btnsubmit" id="sutmit"> Comprar Agora</button>
+                </div>
+              </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer-cus></footer-cus>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+   <script src="./footer.js"></script>
+   <script src="./navbar.js"></script>
+   <script src="./dropdown.js"></script>
+   <script src="./scripts/pagamentos.js"></script>
+  </body>
+</html>
