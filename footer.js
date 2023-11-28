@@ -14,7 +14,6 @@ templateFooterc.innerHTML = `
 .gray-background{
     overflow: hidden;
     width: 100%;
-    
     background-color: #0c0c0c;
 }
 
@@ -152,8 +151,6 @@ templateFooterc.innerHTML = `
 `
 
 class FooterCus extends HTMLElement {
-
-    srcimg = ["srcimg"]
 
     constructor(){
         super()
