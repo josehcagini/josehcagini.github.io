@@ -1,29 +1,139 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Produto</title>
-    <link rel="stylesheet" href="./styles/globals.css">
-    <link rel="stylesheet" href="./styles/product.css">
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Produto</title>
+  <link rel="stylesheet" href="./styles/globals.css">
+  <link rel="stylesheet" href="./styles/product.css">
+</head>
+<body>
+  <navbar-c></navbar-c>
 
-    <navbar-c></navbar-c>
-
-    <main>
-      
-      <div class="gray-background card-destaque">
-        <div class="page-inner-content">
-          <product-p></product-p>
+  <main>
+    <div class="gray-background" style="margin-bottom: 2%;">
+      <div class="main-inner-content">
+        <div class="main-product-side exclusive-container">
+          <div class="main-product-side-left">
+            <div class="title">
+              <h1>Kit De Pesca Profissional Vara Carbono 5'6 +carretilha 10rol</h1>
+            </div>
+            <div style="display: flex; justify-content: end;">
+              <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733; <span
+                  style="color: #c7c7c7; font-size: 12px;">(186)</span></p>
+            </div>
+            <div class="disponivel">
+              <p>PRODUTO DISPONÍVEL</p>
+            </div>
+            <div>
+              <div class="box-priece">
+                <div class="box-img-priece"><svg class="img-money" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M11 17h2v-1h1c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1h-3v-1h4V8h-2V7h-2v1h-1c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1h3v1H9v2h2v1zm9-13H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4V6h16v12z">
+                    </path>
+                  </svg></div>
+                <div class="valor-original">
+                  <div>de <s>R$&nbsp;650,00</s> por:</div><span class="avista">à vista</span>
+                  <div class="valor-desconto">R$&nbsp;552,50</div><span class="desconto-pix">no PIX com 15% desconto</span>
+                </div>
+              </div>
+              <div class="barra-divisoria"></div>
+              <div class="box-priece">
+                <div class="box-img-priece">
+                  <svg class="img-money" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z">
+                    </path>
+                  </svg>
+                </div>
+                <div>
+                  <div style="color: #F00; font-size: 17px; font-weight: bold;">R$&nbsp;600,00</div><span style="font-size: 12px;">em até 10x de<span
+                      style="color: #F00; font-size: 12px; font-weight: bold;"> R$&nbsp;60,00</span></span>
+                  <div style="font-size: 12px;">sem juros no cartão</div>
+                </div>
+              </div>
+            </div>
+            <div class="botoes">
+              <button>Comprar</button>
+              <button id="btnimg"><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAADn0lEQVR4nL2UW2tcVRTH50F8EHzQD+CLoH4A9UMUW0hOkmlrbJw0XsCCZGY6te0ksamkfehrEeqTFPpSbGsaZyaZ25nMmXPbe5/LPrcJgT6YpEEQSg1VociStSc5k5DLKVhcsJiBffj/1v6v/zmp1AvWDZp9b1b+/M5VeWJztvHZ8yuN8c0r8sTtWeXLd1P/tb5rfzHwbXP8WbH+CVyuj8Kl2sdwsXoKvqmewv9bxfr4iSMFvGj1qdddBTdc+TvoPhrZfTazPPHOdCPzrFg/Awi4VBuFi7XTQvxC9SQUltJwYSm9dbmefvtQgBt2n7jBCjhBF2w/qu0+m2qM/ThVHwME7EyPlX84jMJQWBqB/OIQ5BelH468BfX9t2y/+4/tR2BYHEFg+124Jp+DHqA/PdbXP0mQWxiC80vDAjBdPQvUDYBy7PBPysOZfRDbjxwUVXQKpu2C5UUw08jE0x9UuZIkAOcXR8C0PTBEczCZu7Uf4EVzCDAsF2RFB9NyYU4+F09f+CUNk/eGhPDkzxJMzg9CdmEQspVBKFYzfYDFQWUO3QdgPHofAYwH0FINaKkm3Grf6CendhrypbQAZB9KkF2QIFuSIFcehJvytXh63eLQVMzRA3fB/HDN8iNQDAptzYRKpwbTtU/jaGJy8uVh4X+uLEGuIkGhkoYGafenp/ajZrP5ysEAHtxC79Gmtk4E6J5yF6aqY71oiuSke8mpDEGhfBIeaPf3TN/W6VeHpskKVo4hABOhGEwAOqYFVa0J3zevw1TlLBRKaSiWM3CzMQdNsrzHe425v83Pz792KMD3/VctL3xqeSF0iCXE8VejtmgUI44PpmhvT3Jw+pZGioeKxzZ54X3mhT0/SV9cZ64QQdF9AJye2n9UVPXNZACPMoyHYlINhakjxFFEZHwHsGt6PFNM63rqRYp63gQCsFFcYw5o25CdW6jUAZXY0CE2Cj9v66TyQFFeTxQ3Le8DxsO/xA2438KdpF5mMR6WUJzyIOScv5F62UVsr7oN6H283ACI64t9xOmJve8tFy3TrZ59KnN+PxLQIuRDjTqrYrEUvbdBI7ZIk4qRFY3vx3brFF8s0csagWWdHA34X8qw+QBxvE3i+hsm808kPu94H2nE2VCZs6YRfiwRQF3/8Y73puutJz2vMXddYy5+JnAHvyYCTMeLAYbDEwEdYsUAhVjJALltDKjUfqwSe0MxWaJFNVk93tLJeksja3VF22PRv1QY1Yc4NZ2BAAAAAElFTkSuQmCC"></button>
+            </div>
+          </div>
+          <div class="main-product-side-right">
+            <img src="./images/kit_pesca.png">
+          </div>
         </div>
       </div>
+    </div> 
 
-    </main>
+    <div class="gray-background" style="margin-top: 0;">
+      <div class="main-inner-content">
+        <div class="descricao">
+          <div class="descricao-titulo">
+            <h2>Descrição</h2>
+          </div>
+          <div class="descricao-texto">
+            <pre style="font-family: Arial, Helvetica, sans-serif;" wrap="true">
+Conjunto Triton Sait Vara Carbono MI6 Triton 562BC + Carretilha Triton 10 rolamentos. 
 
-    <footer-cus></footer-cus>
+Escolha o lado da Carretilha antes da compra. 
 
-  <script src="./productpage.js"></script>
+Para quem procura um kit para pescaria de Tucunarés traíras robalo tilápias e principalmente pesca de arremesso com iscas artificiais e vivas. 
+
+Kit muito leve e com a qualidade Saint Plus Jogá, com design diferenciado, combinando a vara de pesca com a carretilha, com detalhes em azul metálicos, fazendo toda a diferença. 
+
+
+Perfeita para quem deseja iniciar no mundo da pesca esportiva, a vara Triton destaca-se por sua leveza e resistência, aliadas a uma ação moderada rápida. 
+
+
+Possui blank confeccionado em carbono IM6 e cabo Bi-partido  em EVA, além de ponteira e passadores em óxido de alumínio. 
+
+
+Especificações Técnicas Carretilha: 
+Fabricante: Saint Plus Jogá  
+Modelo: Triton  
+Carretel: Alumínio 
+Manivela: Alumínio 
+Coroa e Pinhão: Latão 
+Sistema Antireverso: Instantâneo 
+Sistema de Freio: magnético 
+Rolamentos: 9+1 
+Recolhimento: 7.0:1 
+Recolhimento por volta: 69cm 
+Tração Máxima: 5kg 
+Peso aproximado: 205g 
+Capacidade de linha: 0.23mm/240m 
+                                  0.26mm/200m 
+                                  028mm/160m 
+
+
+Especificação Vara Triton 
+
+Fabricante: Saint Plus Jogá 
+Modelo: Triton 562bc 
+Secção: 2 partes 
+Tamanho aberta: 1,68cm 
+Tamanho fechada: 87cm 
+Libragem: 7-17lb 
+Pés: 5’6” 
+Cabo: com gatilho sensitivo 
+Passadores: Oxido de carbono de alumínio 
+Blank: Carbono MI6 
+Ação: Modera rápida 
+Passadores: 7 + ponteira 
+
+
+
+Triton 562bc Vara carbono 1,68m vara de carbono saint vara 2 partes de carbono vara 1,68m carbono vara para pesca de tucunares vara para pescar traíras vara leve para pescar tucunaré vara para pesca de robalo vara com carretilha com vara triton vara de carbono 17lbs carretilha 10 rolamentos kit vara e carretilha conjunto vara e carretilha kit carretilha com vara para pesqueiro vara saint plus kit de pesca ideal para tucunare melhor vara para pesca de tucunarés kit de pesca barato kit de pesca profissional kit de pesca para tucunaré profissional.
+            </pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer-cus></footer-cus>
+
   <script src="./footer.js"></script>
   <script src="./navbar.js"></script>
   <script src="./dropdown.js"></script>
