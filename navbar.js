@@ -155,6 +155,10 @@ class NavBarC extends HTMLElement {
         this.attachShadow({mode:'open'})
         this.shadowRoot.appendChild(templateNav.content.cloneNode(true))
 
+        this.shadowRoot.querySelector("div>img:first-child").addEventListener('click', () => {
+            window.location.href = './carrinho.html';
+        })
+
     }
 
     connectedCallback(){
