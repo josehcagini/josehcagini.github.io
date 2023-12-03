@@ -11,23 +11,39 @@
     <navbar-c></navbar-c>
   
     <main>
-      <div class="gray-background" style="margin-bottom: 2%;">
-        <div class="main-inner-content">
-          <div class="main-product-side exclusive-container">
-            <div class="main-product-side-left">
-              <div class="title">
-                <h1>Kit De Pesca Profissional Vara Carbono 5'6 +carretilha 10rol</h1>
-              </div>
-              <div style="display: flex; justify-content: end;"> 
-            </div>
+      <div class="gray-background">
+        <div class="page-inner-content">
+          <div class="title">
+            <h1 >Produtos do Carrinho</h1>
+            <div class="subtitle-underline"> </div>
           </div>
+            <div class="cols">
+              <div class='conteinerCard'>
+                <div class='imgClass'>
+                  <img src="./images/kit_pesca.png">
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <footer class="gray-background" >
+      <div class="page-inner-content footer-content">
+        <div class="conteinerPrice">
+            <h1>Total</h1>
+            <div class="valorTotal">R$&nbsp;552,50</div>
+        </div>
+        <div class="conteinerButton">
+          <button onclick="abrirTelaPagamento()">Finalizar</button>
         </div>
       </div>
-    </main>
-  
-    <footer-cus></footer-cus>
-  
-    <script src="./footer.js"></script>
+    </footer>
+    <script>
+      function abrirTelaPagamento() {
+        window.location.href = './pagamentos.html';
+      }
+    </script>
     <script src="./navbar.js"></script>
     <script src="./dropdown.js"></script>
   </body>
