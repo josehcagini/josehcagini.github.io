@@ -88,6 +88,8 @@ nav ul li:hover {
     display: none;
 }
 
+
+
 @media (max-width: 800px){
 
     *{
@@ -138,6 +140,7 @@ nav ul li:hover {
                 <ul>
                     <li><a href='./index.html'>Home</a></li>
                     <drop-down> </drop-down>
+                    <li><a href='https://github.com/josehcagini/josehcagini.github.io'><img class="githubicon" src="./images/github.svg" alt="Bootstrap" width="32" height="32"></a></li>
                 </ul>
             </nav>
             <div class="nav-icon-conteiner">

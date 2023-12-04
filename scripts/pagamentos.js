@@ -68,3 +68,5 @@ $("#cnpj").keydown(function(){
 $("#celular").mask("(00) 0000-0000");
 $("#ncartao").mask("0000 0000 0000 0000");
 $("#cvv").mask("000");
+
+
