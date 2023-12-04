@@ -11,27 +11,40 @@
     <navbar-c></navbar-c>
   
     <main>
-      <div class="gray-background">
+      <div class="background">
         <div class="page-inner-content">
           <div class="title">
             <h1 >Produtos do Carrinho</h1>
             <div class="subtitle-underline"> </div>
           </div>
             <div class="cols">
-              <div class='conteinerCard'>
-                <div class='imgClass'>
-                  <img src="./images/kit_pesca.png">
-                </div>
+              <div class="conteinerImagem">
+              <div class='imgClass'>
+                <img src="./images/kit_pesca.png">
+              </div>
             </div>
+              <div class="info">
+                <div class="titulo">
+                  <h2>Kit De Pesca Profissional Vara Carbono 5'6 +carretilha 10rol</h2>
+                </div>
+                <div class="valorPorduto">
+                  <p>Valor: R$&nbsp;552,50</p>
+                </div>
+                <div>
+                  <button class="botoes" onclick="decrementar(1)">-</button>
+                  <label id="quantidadeProduto1">1</label>
+                  <button class="botoes" onclick="incrementar(1)">+</button>
+                </div>
+              </div>
             </div>
         </div>
     </div>
     </main>
 
-    <footer class="gray-background" >
+    <footer class="background" >
       <div class="page-inner-content footer-content">
         <div class="conteinerPrice">
-            <h1>Total</h1>
+            <h2>Total</h2>
             <div class="valorTotal">R$&nbsp;552,50</div>
         </div>
         <div class="conteinerButton">
@@ -40,6 +53,20 @@
       </div>
     </footer>
     <script>
+      function decrementar(codigoProduto) {
+        const elemento = document.querySelector("#quantidadeProduto" + codigoProduto)
+        let quantidade = elemento.textContent
+
+        elemento.textContent = quantidade - 1
+      }
+
+      function incrementar(codigoProduto) {
+        const elemento = document.querySelector("#quantidadeProduto" + codigoProduto)
+        let quantidade = elemento.textContent
+
+        elemento.textContent = parseInt(quantidade) + 1
+      }
+
       function abrirTelaPagamento() {
         window.location.href = './pagamentos.html';
       }
