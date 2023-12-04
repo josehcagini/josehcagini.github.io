@@ -19,6 +19,7 @@ img{
     width: 150px;
     height: 130px;
 }
+
 .conteinerCard{
     background-color: #c7c7c7;
     display: flex;
@@ -32,7 +33,7 @@ img{
 
 }
 .conteinerCard:hover {
-    box-shadow: 0px -3px 53px 5px rgba(199,199,199,0.35);
+    box-shadow: 0px -3px 53px 5px rgba(199,199,199,0.45);
 }
 </style>
 
